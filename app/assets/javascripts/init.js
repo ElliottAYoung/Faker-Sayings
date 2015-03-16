@@ -5,12 +5,12 @@ $(document).ready(function(){
     e.preventDefault();
 
     var request = $.ajax({
-      url: '/corporate',
-      type: 'get',
+      url: serverUrl,
+      type: 'get'
     });
 
     request.done(function(response){
-      console.log(response)
+      $("#saying").empty().append(response.saying);
     });
-  })
+  });
 });

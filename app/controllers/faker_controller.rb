@@ -1,6 +1,6 @@
-class FakerControllerController < ApplicationController
+class FakerController < ApplicationController
   def corporate
-    @saying = Faker::Corporate.slogan
+    @saying = Faker::Company.catch_phrase
   end
 
   def hacker

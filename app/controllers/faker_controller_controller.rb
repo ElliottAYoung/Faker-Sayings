@@ -4,5 +4,6 @@ class FakerControllerController < ApplicationController
   end
 
   def hacker
+    @saying = Faker::Hacker.say_something_smart
   end
 end

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get '/corporate' => 'faker#corporate', as: 'corporate_request'
   get '/hacker'    => 'faker#hacker',    as: 'hacker_request'
+
+  root "static#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
